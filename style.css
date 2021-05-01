@@ -26,6 +26,15 @@ header {
   background-color: white;
 }
 
+.start-game {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.start-game button {
+  padding: 20px;
+}
+
 .box {
   display: flex;
   justify-content: center;
@@ -40,4 +49,9 @@ header {
 .players {
   display: grid;
   justify-content: center;
+}
+
+.players button {
+  padding: 20px;
+  margin-bottom: 30px;
 }

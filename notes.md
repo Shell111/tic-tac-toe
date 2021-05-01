@@ -1,7 +1,6 @@
-#Notes on Tic Tac Toe project
+# Notes on Tic Tac Toe project
 
 ## What to do
-
 Render a game in the browser
 Switch turns between more than one player
 Design logic for winning & visually display which player won
@@ -25,16 +24,48 @@ Can arrays be use for winning scenarios
 Check who won
 
  
-
-
-
 ### Planning
+Create a wireframe
 Start with a mock up in html
+Write Pseudo code
+// Create HTML so there's a visual to reference
+// Create a grid layout to simulate game visual
+// Think about how JS and HTML will interact
+// Have a way for users to click and add their X & O
+// How will the users know who goes first
+// Change the colour of the cells when they are clicked
+// Does a player have three in a row on row 1
 
-### Steps
-Enable boxes to be clicked
+// Does a player have three in a row on row 2
+// Does a player have three in a row on row on row 3
+// Repeat for each winning combination (column & diagonal)
+// How is this checked?
+// Might you use arrays for this?
+Be able to get all the values in row 1, or 2, or 3
+// Add a class to each element so it can be referenced
+// Let each clicked box change to a color or change x or 0 depending on player click
+// Create functions to enable interactions
+// Create an alert when a player has won or if there is a draw
 
 
+// Nested function calls
+checkIfUserWon();
+
+function checkIfUserWon(){
+  if (doTheyHaveThreeInARow()) {
+    // they won
+    console.log('they won')
+  } else {
+    // keep playing
+  }
+}
+
+function doTheyHaveThreeInARow(){
+  if(doTheyHaveThreeInARow1() || doTheyHaveThreeInARow2() || doTheyHaveThreeInARow3());
+  }
+doTheyHaveThreeInARow()
+
+///////
 
 ### Notes on making the board an array
 let board = [0,0,0,0,0,0,0,0,0]
