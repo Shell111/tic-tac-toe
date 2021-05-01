@@ -1,0 +1,43 @@
+body {
+  background-color: lightcoral;
+
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+#game-grid {
+  display: grid;
+  grid: 1fr / auto auto auto;
+  gap: 40px;
+  justify-content: center;
+  align-content: center;
+}
+
+
+#game-grid div {
+  display: grid;
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.to-play {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.players {
+  display: grid;
+  justify-content: center;
+}
