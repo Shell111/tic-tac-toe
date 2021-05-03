@@ -1,6 +1,6 @@
 # Notes on Tic Tac Toe project
 
-## What to do
+### What to do
 Render a game in the browser
 Switch turns between more than one player
 Design logic for winning & visually display which player won
@@ -11,72 +11,76 @@ Deploy your game online, where the rest of the world can access it
 Use semantic markup for HTML and CSS (adhere to best practices)
 
 ### Things to consider
-Grid layout in html & css
-9 x 9 
-ids against the cells for targeting
+Grid layout in html & css: 3 by 3
+Classes & ids against the cells for targeting
 Player 1 & player 2 with colour allocation to each
--- may need buttons to distinguish
+-- may need buttons to distinguish, or a status message
 -- and to enable switching turns
 DOM interaction 
-functions & conditionals to check for winning, game over etc
-loop can iterate through each element
-Can arrays be use for winning scenarios
+Loops can iterate through each element
+Arrays be use for winning scenarios
 Check who won
 
- 
-### Planning
-Create a wireframe
-Start with a mock up in html
-Write Pseudo code
-// Create HTML so there's a visual to reference
-// Create a grid layout to simulate game visual
-// Think about how JS and HTML will interact
-// Have a way for users to click and add their X & O
-// How will the users know who goes first
-// Change the colour of the cells when they are clicked
-// Does a player have three in a row on row 1
+## PSEUDO CODE 
 
-// Does a player have three in a row on row 2
-// Does a player have three in a row on row on row 3
-// Repeat for each winning combination (column & diagonal)
-// How is this checked?
-// Might you use arrays for this?
-Be able to get all the values in row 1, or 2, or 3
-// Add a class to each element so it can be referenced
-// Let each clicked box change to a color or change x or 0 depending on player click
-// Create functions to enable interactions
-// Create an alert when a player has won or if there is a draw
+### Visual wireframing
+Create a wireframe for a visual of the game being built
+### HTML
+Create basic elements in HTML
+-- add grid layout
+---- labels with IDs or classes for easy JS targeting
+-- buttons to start game, maybe one for each player or just one for game status
+### CSS
+Initially add basic styling so elements & interactions can be seen
+Last step - enhance all the styling
+
+### JS (initial plan)
+Initial plan is to work with arrays
+
+Create an empty array for all the grid boxes so all elements can be targetted for interaction
+
+Create nested arrays for all winning combinations in case needing to target separately
+
+Create arrays for draw outcomes
+-- will also create separate arrays for each combo in case this method is easier for targeting
+
+Develop a way for array index to be captured in computer memory, and allocated from array (as turns taken)
+-- use .innerText or .textContent to provide visual interaction of turn taken
+-- use a for loop to set maximum number of iterations
+-- provide status update on page using .innerText on element 
+---- i.e. Game status: Player 1 moves now 
+
+Develop way for X & O to be allocated to grid boxes, or perhaps change the background colour
+-- Such as when a player has their turn, an interaction occurs to confirm it's happened 
+-- then alert for the next player's turn
+-- enable the X & O to interchange - possible use of the conditional operator or something similar to counters
+
+Create validation check for winning arrays 
+-- Does a player have three in a row on row 1
+-- Does a player have three in a row on row 2
+-- and so on for all rows, columns and diagonals
+-- check these against the winning arrays with for loops & IF statements
+
+Develop way for the game to be validated as true or 'game won', or draw
+-- Use conditionals, IF statements or boolean values to provide checks and validations
+
+Use for loops again to iterate through array and allocate styling or .innerText values.
+
+Think about the game being active & inactive
+-- i.e. what needs to happen to 'turn game on' or reset game (eg. IF statement or boolean true or false value)
+
+Create functions to use for repeated code i.e. updated .innerText
+
+### keep it as simple as you can
 
 
-// Nested function calls
-checkIfUserWon();
 
-function checkIfUserWon(){
-  if (doTheyHaveThreeInARow()) {
-    // they won
-    console.log('they won')
-  } else {
-    // keep playing
-  }
-}
 
-function doTheyHaveThreeInARow(){
-  if(doTheyHaveThreeInARow1() || doTheyHaveThreeInARow2() || doTheyHaveThreeInARow3());
-  }
-doTheyHaveThreeInARow()
+/////////
 
-///////
+Notes on making the grid an array
 
-### Notes on making the board an array
-let board = [0,0,0,0,0,0,0,0,0]
+let board = ['', '', '','', '', '','', '', ''],
 function player2Plays() {
   board[4] = 2;
 }
-
-// Do logic only in the code
-// separate presentation step to acutlaly display the board to the user in HTML
-
-function displayTheBoard(board) {
-  // create all the divs for us and fill them with the correct values
-  // click handlers etc
-  }

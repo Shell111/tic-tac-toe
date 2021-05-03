@@ -1,7 +1,8 @@
 # tic-tac-toe
 
-Welcome 
+Welcome to my Tic Tac Toe game
 
 # How to play
 
-Just testing
+### Instructions
+Step 1.

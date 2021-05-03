@@ -16,31 +16,34 @@
 
   <div class="start-game">
     <button>Start Game</button>
-  </div>
 
-  <section class="to-play">
-    <div class="players" id="player-one">
-      <h3>Player One</h3>
-    <button>Green</button>
-  </div>    
-    <div class="players" id="player-one">
-      <h3>Player Two</h3>
-      <button>Red</button>
-    </div>   
-  </section>
+    <div class="current-player">
+      <h3 class="current-move">Current player</h3>
+    </div>
+  </div>  
   
   <main id="game-grid">
-    <div class="box" id="cell 1">1</div>
-    <div class="box" id="cell 2">2</div>
-    <div class="box" id="cell 3">3</div>
-    <div class="box" id="cell 4">4</div>
-    <div class="box" id="cell 5">5</div>
-    <div class="box" id="cell 6">6</div>
-    <div class="box" id="cell 7">7</div>
-    <div class="box" id="cell 8">8</div>
-    <div class="box" id="cell 9">9</div>
+    <div class="box" data-cell="0" id="cell-1"></div>
+    <div class="box" data-cell="1" id="cell-2"></div>
+    <div class="box" data-cell="2" id="cell-3"></div>
+    <div class="box" data-cell="3" id="cell-4"></div>
+    <div class="box" data-cell="4" id="cell-5"></div>
+    <div class="box" data-cell="5" id="cell-6"></div>
+    <div class="box" data-cell="6" id="cell-7"></div>
+    <div class="box" data-cell="7" id="cell-8"></div>
+    <div class="box" data-cell="8" id="cell-9"></div>
   </main>
 
+  <section class="to-play">
+    <div class="players">
+      <h3>Player One</h3>
+    <button id="player-one">X</button>
+  </div>    
+    <div class="players">
+      <h3>Player Two</h3>
+      <button id="player-two">0</button>
+    </div>   
+  </section>
 
 </body>
 </html>

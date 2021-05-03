@@ -1,18 +1,37 @@
 body {
   background-color: lightcoral;
+  width: 600px;
+  margin: auto;
+  font-family:Arial, Helvetica, sans-serif
 
 }
 
 header {
   display: flex;
-  justify-content: center;
+  justify-content: left;
+  margin-top: 50px;
+}
+
+.current-player {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 40px;
+  font-style: italic;
+  text-transform: uppercase;
+  margin-top: 30px;
+
+}
+
+
+.current-move {
+
 }
 
 #game-grid {
   display: grid;
   grid: 1fr / auto auto auto;
   gap: 40px;
-  justify-content: center;
+  justify-content: left;
   align-content: center;
 }
 
@@ -21,23 +40,25 @@ header {
   display: grid;
   width: 150px;
   height: 150px;
-  border: 1px solid black;
-  border-radius: 10px;
+  border-radius: 30px;
   background-color: white;
 }
 
 .start-game {
-  margin-bottom: 10px;
-  text-align: center;
+  margin-bottom: 25px;
+  text-align: left;
 }
 
 .start-game button {
   padding: 20px;
+  border-radius: 15px;
+  background-color: lightcyan;
+  border: none;
 }
 
 .box {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
 }
 
@@ -48,10 +69,16 @@ header {
 
 .players {
   display: grid;
-  justify-content: center;
+  justify-content: left;
+  margin-top: 20px;
+  margin-right: 80px;
+
 }
 
 .players button {
   padding: 20px;
   margin-bottom: 30px;
+  border-radius: 15px;
+  background-color: lightyellow;
+  border: none;
 }
