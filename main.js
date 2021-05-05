@@ -79,6 +79,8 @@ refreshButton.addEventListener('click', function() {
 
 const gridTurns = document.querySelectorAll('.box')
 
+// extra attempt at counter to get it stopping
+
 gridTurns[0].addEventListener('click', gridCells)
 gridTurns[1].addEventListener('click', gridCells)
 gridTurns[2].addEventListener('click', gridCells)
@@ -89,6 +91,8 @@ gridTurns[6].addEventListener('click', gridCells)
 gridTurns[7].addEventListener('click', gridCells)
 gridTurns[8].addEventListener('click', gridCells)
 
+// extra attempt at counter to get it stopping
+
 function gridCells(){
   if (gridCells === 0){
     gridCells++
@@ -97,6 +101,7 @@ function gridCells(){
   }
 }
 
+// extra attempt at counter to get it stopping
 // Game cells as empty array, to be allocated as turns taken
 //const boxes = document.querySelectorAll('.box');
 //let gameValues = Array.from(boxes)
@@ -206,8 +211,6 @@ function gamePlay() {
 
 // Convert boxes from NodeList to an array
 //var boxesArr = Array.from(boxes);
-
-
 
 // Convert boxes from NodeList to an array
 //var boxesArr = Array.from(boxes);
