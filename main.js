@@ -6,6 +6,7 @@ let currentMove = ' '
 currentPlayer.innerHTML = "Player one to start";
 let gameResult = document.querySelector('#game-result')
 
+
 // Start button
 let startGameButton = document.querySelector('.start-game')
 startGameButton.addEventListener('click', function(event) {
@@ -32,12 +33,16 @@ function backgroundChangeTwo(){
 // Turn taking
 let turnTracking = 9
 let maxMoves = turnTracking
+    console.log(maxMoves)
+
 
 function moves() {
-  // let turns = 9; 
+  let turns = 9; 
   if (maxMoves %2 === 0 && maxMoves >= 0) {
-    maxMoves = maxMoves - 1;  
+    maxMoves = maxMoves + 1;  
+    console.log(maxMoves)
     maxMoves = true
+    console.log(maxMoves)
     backgroundChangeOne()
     currentPlayer.textContent = "It's your turn Player 1"
   } else if (maxMoves % 2 != 0 && maxMoves >= 0) {
@@ -70,9 +75,9 @@ const grid = document.querySelectorAll('.box');
 const refreshButton = document.querySelector('#new-game')
 refreshButton.addEventListener('click', function() {
   for (var i = 1;i <= 9;i++) {
-      var cellID = "cell-" + i; 
-      document.getElementById(cellID).innerText = "";
-      document.getElementById(cellID).style.backgroundColor = "";
+    var cellID = "cell-" + i; 
+    document.getElementById(cellID).innerText = "";
+    document.getElementById(cellID).style.backgroundColor = "";
   }
 })
 
@@ -141,29 +146,29 @@ function gamePlay() {
 //firstRowWin
   if (firstCell.innerHTML === "X" && secondCell.innerHTML === "X" && thirdCell.innerHTML === "X") {
   gameResult.innerHTML = "Crosses won!"
-  alert("Crosses won!")
+    alert("Crosses won!")
   } else if (firstCell.innerHTML === "O" && secondCell.innerHTML === "O" && thirdCell.innerHTML === "O") {
   gameResult.innerHTML = "Noughts won!"
-  alert("Noughts won!")
+    alert("Noughts won!")
   }
 
 //secondRowWin
   else if (fourthCell.innerHTML === "X" && fifthCell.innerHTML === "X" && sixthCell.innerHTML === "X") {
   gameResult.innerHTML = "Crosses won!"
-  alert("Crosses won!")
+    alert("Crosses won!")
   } else if (fourthCell.innerHTML === "O" && fifthCell.innerHTML === "O" && sixthCell.innerHTML === "O") {
   gameResult.innerHTML = "Noughts won!"
-  alert("Noughts won!")
+    alert("Noughts won!")
   }
 
 
 //thirdRowWin
   else if (seventhCell.innerHTML === "X" && eigthCell.innerHTML === "X" && ninthCell.innerHTML === "X") {
   gameResult.innerHTML = "Crosses won!"
-  alert("Crosses won!")
+    alert("Crosses won!")
   } else if (seventhCell.innerHTML === "O" && eigthCell.innerHTML === "O" && ninthCell.innerHTML === "O") {
   gameResult.innerHTML = "Noughts won!"
-  alert("Noughts won!")
+    alert("Noughts won!")
   } 
 
 // RESULTS COLUMN FUNCTIONS  
@@ -172,38 +177,38 @@ function gamePlay() {
   else if (firstCell.innerHTML === "X" && fourthCell.innerHTML === "X" && seventhCell.innerHTML === "X") {
    alert("Crosses won!")
   } else if (firstCell.innerHTML === "O" && fourthCell.innerHTML === "O" && seventhCell.innerHTML === "O") {
-  alert("Noughts won!")
+    alert("Noughts won!")
   }
 
 //secondColumnWin
   else if (secondCell.innerHTML === "X" && fifthCell.innerHTML === "X" && eigthCell.innerHTML === "X") {
    alert("Crosses won!")
   } else if (secondCell.innerHTML === "O" && fifthCell.innerHTML === "O" && eigthCell.innerHTML === "O") {
-  alert("Noughts won!")
+    alert("Noughts won!")
   }
 
 /// thirdColumnWin 
   else if (thirdCell.innerHTML === "X" && sixthCell.innerHTML === "X" && ninthCell.innerHTML === "X") {
-   alert("Crosses won!")
+    alert("Crosses won!")
   } else if (thirdCell.innerHTML === "O" && sixthCell.innerHTML === "O" && ninthCell.innerHTML === "O") {
-  alert("Noughts won!")
+    alert("Noughts won!")
   }
 
 // firstDiganolWin  
 
   else if (firstCell.innerHTML === "X" && fifthCell.innerHTML === "X" && ninthCell.innerHTML === "X") {
-   alert("Crosses won!")
+    alert("Crosses won!")
   } else if (firstCell.innerHTML === "O" && fifthCell.innerHTML === "O" && ninthCell.innerHTML === "O") {
   alert("Noughts won!")
   } 
 
 // second DiganolWin  
   else if (thirdCell.innerHTML === "X" && fifthCell.innerHTML === "X" && seventhCell.innerHTML === "X") {
-   alert("Crosses won!")
+    alert("Crosses won!")
   } else if (thirdCell.innerHTML === "O" && fifthCell.innerHTML === "O" && seventhCell.innerHTML === "O") {
-  alert("Noughts won!")
+   alert("Noughts won!")
   } 
-  }
+}
   
 
 // All boxes into a nodelist

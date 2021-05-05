@@ -1,17 +1,17 @@
 body {
-  background-color: rgb(250, 175, 175);
+  background-color: rgb(252, 202, 183);
   width: 900px;
   margin: auto;
   font-family:Arial, Helvetica, sans-serif
-
 }
 
 .container {
-  border: 4px solid white;
+  border: 5px solid white;
   border-radius: 80px;
   padding: 20px 50px 50px 40px;
   margin: 20px;
-  background-color: rgb(250, 150, 150);
+  background-color: lightpink;
+  box-shadow: 10px 10px;
 }
 
 header {
@@ -21,24 +21,36 @@ header {
 }
 
 h1 {
+  font-size: 80px;
   text-transform: uppercase;
-  font-size: 50px;
-  letter-spacing: .1em;
+  letter-spacing: .06em;
   margin-bottom: 20px;
-  font-weight: 300;
+  margin-top: 20px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  color: rgb(238, 87, 31);
 }
 
 .current-player {
   display: flex;
   justify-content: left;
-  margin-bottom: 40px;
-  font-style: italic;
-  text-transform: uppercase;
-  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: rgb(32, 109, 193);
+  font-size: 22px;
+  font-weight: 500;
+  border-bottom: 1px solid rgb(32, 109, 193);;
 }
 
 .current-move {
   color: red;
+}
+
+.game-status {
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+  margin-bottom: 20px
 }
 
 #game-grid {
@@ -59,38 +71,41 @@ h1 {
 }
 
 .operators {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;  
   gap: 50px;
   justify-content: center;
-}
-
-.start-game {
-  margin-bottom: 25px;
-  justify-content: center;
+  margin: 20px;
 }
 
 .start-game button {
-  padding: 20px;
+  padding: 15px 40px 15px 40px;
   border-radius: 15px;
-  background-color: rgb(83, 199, 145);
+  background-color: rgb(123, 189, 158);
   border: 1.5px solid white;
   justify-content: center;
-
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 14px;
+  box-shadow: 7px 7px;
 }
 
 #new-game button {
-    padding: 20px;
-    border-radius: 15px;
-    background-color: red;
-    border: 1.5px solid white;
-    margin-bottom: 20px;
+  padding: 15px 40px 15px 40px;
+  border-radius: 15px;
+  background-color: rgba(244, 90, 55, 0.632);
+  border: 1.5px solid white;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 14px;
+  box-shadow: 7px 7px;
 }
 
 .box {
   display: flex;
   justify-content: left;
   align-items: center;
+  box-shadow: 7px 7px;
 }
 
 .box 
@@ -98,24 +113,23 @@ h1 {
   font-size: 20px;
   justify-content: center;
   color: red;
-  box-shadow: 10 10 10 red;
 }
 
 .to-play {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: center;
 
 }
 
 .players {
-  display: grid;
-  justify-content: center;
   margin-top: 20px;
   margin-right: 80px;
+  display: grid;
 }
 
 .players button {
-  padding: 20px 55px 20px 55px;
+  justify-content: center;
+  padding: 20px;
   margin-bottom: 30px;
   border-radius: 15px;
   background-color: lightyellow;
