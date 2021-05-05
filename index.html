@@ -10,39 +10,47 @@
   <title>Tic Tac Toe</title>
 </head>
 <body>
-  <header>
-    <h1>Heading 1</h1>
-  </header>
+  <section class="container">
+    <header>
+      <h1>Tic Tac Toe</h1>
+    </header>
 
-  <div class="start-game">
-    <button>Start Game</button>
-
-    <div class="current-player">
-      <h3 class="current-move">Current player</h3>
+    <section class="operators">
+      <div class="start-game">
+        <button>Start Game</button>
+      </div> 
+        <div id="new-game">
+          <button>New Game</button> 
+      </div>
+    </section>
+    <div class="current-player" id="game-result">
+      <h3 class="current-move"></h3>
     </div>
-  </div>  
-  
-  <main id="game-grid">
-    <div class="box" data-cell="0" id="cell-1"></div>
-    <div class="box" data-cell="1" id="cell-2"></div>
-    <div class="box" data-cell="2" id="cell-3"></div>
-    <div class="box" data-cell="3" id="cell-4"></div>
-    <div class="box" data-cell="4" id="cell-5"></div>
-    <div class="box" data-cell="5" id="cell-6"></div>
-    <div class="box" data-cell="6" id="cell-7"></div>
-    <div class="box" data-cell="7" id="cell-8"></div>
-    <div class="box" data-cell="8" id="cell-9"></div>
-  </main>
 
-  <section class="to-play">
-    <div class="players">
-      <h3>Player One</h3>
-    <button id="player-one">X</button>
-  </div>    
-    <div class="players">
-      <h3>Player Two</h3>
-      <button id="player-two">0</button>
-    </div>   
+    
+    <main id="game-grid">
+      <div class="box" class="data-cell-0" id="cell-1"></div>
+      <div class="box" class="data-cell=1" id="cell-2"></div>
+      <div class="box" class="date-cell=2" id="cell-3"></div>
+      <div class="box" data-cell="3" id="cell-4"></div>
+      <div class="box" data-cell="4" id="cell-5"></div>
+      <div class="box" data-cell="5" id="cell-6"></div>
+      <div class="box" data-cell="6" id="cell-7"></div>
+      <div class="box" data-cell="7" id="cell-8"></div>
+      <div class="box" data-cell="8" id="cell-9"></div>
+    </main>
+
+    <section class="to-play">
+      <div class="players">
+        <h3>Player One</h3>
+      <button id="player-one">X</button>
+    </div>    
+      <div class="players">
+        <h3>Player Two</h3>
+        <button id="player-two">0</button>
+      </div>   
+    </section>
+
   </section>
 
 </body>
