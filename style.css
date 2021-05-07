@@ -2,7 +2,7 @@ body {
   background-color: rgb(252, 202, 183);
   width: 900px;
   margin: auto;
-  font-family:Arial, Helvetica, sans-serif
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 .container {
@@ -82,7 +82,7 @@ h1 {
 .start-game button {
   padding: 15px 40px 15px 40px;
   border-radius: 15px;
-  background-color: rgb(123, 189, 158);
+  background-color: rgb(134, 199, 169);
   border: 1.5px solid white;
   justify-content: center;
   text-transform: uppercase;

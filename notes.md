@@ -23,64 +23,46 @@ Check who won
 
 ## PSEUDO CODE 
 
-### Visual wireframing
-Create a wireframe for a visual of the game being built
-### HTML
-Create basic elements in HTML
--- add grid layout
----- labels with IDs or classes for easy JS targeting
--- buttons to start game, maybe one for each player or just one for game status
-### CSS
-Initially add basic styling so elements & interactions can be seen
-Last step - enhance all the styling
+### **Visual wireframing**
 
-### JS (initial plan)
-Initial plan is to work with arrays
+Create a wireframe to demonstrate the visual layout of the game
 
-Create an empty array for all the grid boxes so all elements can be targetted for interaction
+### **HTML**
 
-Create nested arrays for all winning combinations in case needing to target separately
+1. Create basic elements in HTML
+2. Add grid layout and label with IDs and classes for targeting in JS and the DOM
+3. Add button tags to enable game refresh or new game, possibly for two players too
+4. Add HTML element for visually displaying game result (which will be targeted via the DOM)
 
-Create arrays for draw outcomes
--- will also create separate arrays for each combo in case this method is easier for targeting
+### **CSS**
 
-Develop a way for array index to be captured in computer memory, and allocated from array (as turns taken)
--- use .innerText or .textContent to provide visual interaction of turn taken
--- use a for loop to set maximum number of iterations
--- provide status update on page using .innerText on element 
----- i.e. Game status: Player 1 moves now 
+1. Initially add basic styling so elements & interactions can be seen and compared
+2. Last step - enhance all the styling and improve UX experience
+3. Possibly add modal pop-up to display game results
 
-Develop way for X & O to be allocated to grid boxes, or perhaps change the background colour
--- Such as when a player has their turn, an interaction occurs to confirm it's happened 
--- then alert for the next player's turn
--- enable the X & O to interchange - possible use of the conditional operator or something similar to counters
+### **JS (initial plan)**
+Create a grid element (or elements) that can store the X & Os, and be evaluated for turn taking
+  — add eventListeners to each grid cell, so the click can be registered and tracked
 
-Create validation check for winning arrays 
--- Does a player have three in a row on row 1
--- Does a player have three in a row on row 2
--- and so on for all rows, columns and diagonals
--- check these against the winning arrays with for loops & IF statements
+Create a counter that will enable turn taking between two players
 
-Develop way for the game to be validated as true or 'game won', or draw
--- Use conditionals, IF statements or boolean values to provide checks and validations
+Create a variable to store the game result and allow for interaction through the DOM
 
-Use for loops again to iterate through array and allocate styling or .innerText values.
+Create a variable for the Start game / or Restart button 
 
-Think about the game being active & inactive
--- i.e. what needs to happen to 'turn game on' or reset game (eg. IF statement or boolean true or false value)
+Create a function that will run the alternate moves, and allow Xs & Ox to be placed in.
+  — Create functions that will allow for DOM changes and interaction
 
-Create functions to use for repeated code i.e. updated .innerText
+Track the counter via a loop or other method so the moves of the game can end at 9
 
-### keep it as simple as you can
+Create a variable that can track the moves i.e. it's player one's turn, it's player two's turn
+  — Enable the textContent of the the related HTML element to change to visually display info
 
+Create functions that will enable the HTML grid cells to change once clicked
 
-
-
-/////////
-
-Notes on making the grid an array
-
-let board = ['', '', '','', '', '','', '', ''],
-function player2Plays() {
-  board[4] = 2;
-}
+Create functions that will evaluate the grid cells for winning combinations of:
+  — first row, second row, third row, 
+  — first column, second column, third column
+  — first diagonal, second diagonal
+  — and draw condition (when no more moves can be played)
+  — Visually display the results via the DOM when a game is complete by the game result element (mentioned above)
