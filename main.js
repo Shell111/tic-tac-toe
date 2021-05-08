@@ -3,7 +3,7 @@
 //let playerTwo = document.querySelector('#player-two');
 let currentPlayer = document.querySelector('.current-player') // this connects to the background change function
 let currentMove = ' '
-currentPlayer.innerHTML = "Player one to start"; 
+currentPlayer.innerHTML = "Player one to start!"; 
 
 // displays game result
 let gameResult = document.querySelector('#game-result')
@@ -25,6 +25,7 @@ startGameButton.addEventListener('click', function(event) {
   resultPopup.classList.add('visible')
   resultDisplay.innerHTML ="Play starts now!"
   counter = 0
+  gameResult.innerHTML = "Player one to start!"
 })
 
 // gridCells function for turn-taking -- there is an error here
@@ -38,8 +39,9 @@ function gridCells(){
   resultPopup.classList.add('visible')
   // The below is appearing only once and halfway through a game if the first game isn't a draw
   resultDisplay.innerHTML = "Looks like it's a draw!"
-  // drawAlert.textContent = 'draw alert'
-  console.log(currentPlayer)
+  gameResult.innerHTML = "It's a draw!"
+  //drawAlert.textContent = 'draw alert'
+  //console.log(currentPlayer)
   }
 } 
 
@@ -62,7 +64,7 @@ function moves(cellElement) {
   } 
   if (maxMoves >= 9) {
     currentPlayer.textContent = "draw!";
-    maxMoves = null
+   // maxMoves = null
     alert('game over!')
     //return
   }
@@ -292,7 +294,8 @@ function gamePlay() {
   } 
 }
 
-// POP UP CLOSE POPUP
+
+// POP UP CLOSE FUNCTION
 const closePopup = () => {
   resultPopup.classList.remove('visible')
 }

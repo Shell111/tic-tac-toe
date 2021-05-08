@@ -60,7 +60,7 @@ Create a variable that can track the moves i.e. it's player one's turn, it's pla
 
 Create functions that will enable the HTML grid cells to change once clicked
 
-Create functions that will evaluate the grid cells for winning combinations of:
+Create functions and If statements that will evaluate the grid cells for winning combinations of:
   — first row, second row, third row, 
   — first column, second column, third column
   — first diagonal, second diagonal
