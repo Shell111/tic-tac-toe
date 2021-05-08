@@ -30,16 +30,17 @@ Game URL: https://shell111.github.io/tic-tac-toe/
 + Initial code development to determine which approach would be taken - i.e. arrays, IF ststatements
 
 ## Design
-+ Figma used for UI wireframe and initial design
++ Figma for the UI wireframe and initial design
 
 ## Future updates
 + Code to be refactored to be scalable 
 + Options for users to choose their X or O, or input their own avatars or markers
-+ Game reset to automatically happen after a specified time period instead of be manually reset by button
++ Game reset to automatically happen after a specified time period instead of manual reset by button
 + Multiple player options to be developed
++ Responsive design still to come
 
 ## Bugs
 + Empty cells to not be clickable once game win is determined
 
-## Screenshots
+## Screenshot of interface
 ![Screenshot of game home screen](Game-home-screen.png)
