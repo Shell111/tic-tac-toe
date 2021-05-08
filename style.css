@@ -45,7 +45,7 @@ h1 {
 }
 
 .current-move {
-  color: red;
+  color: black;
 }
 
 .game-status {
@@ -62,7 +62,6 @@ h1 {
   justify-content: center;
   align-content: center;
 }
-
 
 #game-grid div {
   display: grid;
@@ -114,7 +113,7 @@ h1 {
 .background-change {
   font-size: 20px;
   justify-content: center;
-  color: red;
+  color: white;
 }
 
 
