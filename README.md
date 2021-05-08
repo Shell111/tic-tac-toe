@@ -17,3 +17,25 @@ Game was written in HTML, CSS, and JS, with interaction by DOM manipulation
 Developed and tested for use in Google Chrome Version 90.0.4430.93
 
 Game URL: https://shell111.github.io/tic-tac-toe/
+
+## Technologies used
+Game was developed:
+HTML
+CSS
+JavaScript  
+DOM manipulation
+
+## Planning
+Initial UI wireframe
+Pseudo code planning
+Initial code development to determine which approach would be taken - i.e. arrays, IF ststatements
+
+## Design
+Figma used for UI wireframe and initial design
+
+## Future updates
++ Code to be refactored to be scalable 
++ Options for users to choose their X or O, and be allocated this for entire game session instead of just a single game
++ Empty cells to not be clickable once game win is determined
++ Game reset to automatically happen after a specified time period instead of be manually reset by button
++ multiple player options to be developed
