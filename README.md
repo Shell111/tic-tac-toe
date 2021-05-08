@@ -42,4 +42,4 @@ Game URL: https://shell111.github.io/tic-tac-toe/
 + Empty cells to not be clickable once game win is determined
 
 ## Screenshots
-![Screenshot of game home screen](Home-screen.png)
+![Screenshot of game home screen](Game-home-screen.png)
