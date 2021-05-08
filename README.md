@@ -1,8 +1,19 @@
-# tic-tac-toe
+# Tic Tac Toe Game
+## README
+### Overview
+This Tic Tac Toe game can be accessed here https://shell111.github.io/tic-tac-toe/
++ It is constrained to two players on the one device 
++ The game is set up as a 3 by 3 grid
++ The game is won by one player achieving there marker (X or O) in a row, column or diagonal
++ Players are allocated either the X or O to use by the game at the game start (this cannot be chosen at the moment). 
++ Players then take alternating turns until game is won or it's a draw.
++ Once the game is over, a pop up will display the result.
++ At this point the game can be reset by either the New Game or Restart Game button, and a new game can begin. 
++ Game reset is not an auto feature this point, it must be reset by either the New Game or Restart Game button
++ The game board is limited to 9 moves.
 
-Welcome to my Tic Tac Toe game
+Game was written in HTML, CSS, and JS, with interaction by DOM manipulation
 
-# How to play
+Developed and tested for use in Google Chrome Version 90.0.4430.93
 
-### Instructions
-Step 1.
+Game URL: https://shell111.github.io/tic-tac-toe/
