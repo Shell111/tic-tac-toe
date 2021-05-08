@@ -19,19 +19,18 @@ Developed and tested for use in Google Chrome Version 90.0.4430.93
 Game URL: https://shell111.github.io/tic-tac-toe/
 
 ## Technologies used
-Game was developed:
-HTML
-CSS
-JavaScript  
-DOM manipulation
++ HTML
++ CSS
++ JavaScript  
++ DOM manipulation
 
 ## Planning
-Initial UI wireframe
-Pseudo code planning
-Initial code development to determine which approach would be taken - i.e. arrays, IF ststatements
++ Initial UI wireframe
++ Pseudo code planning
++ Initial code development to determine which approach would be taken - i.e. arrays, IF ststatements
 
 ## Design
-Figma used for UI wireframe and initial design
++ Figma used for UI wireframe and initial design
 
 ## Future updates
 + Code to be refactored to be scalable 

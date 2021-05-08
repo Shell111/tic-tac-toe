@@ -117,26 +117,6 @@ h1 {
   color: red;
 }
 
-.to-play {
-  display: flex;
-  justify-content: center;
-
-}
-
-.players {
-  margin-top: 20px;
-  margin-right: 80px;
-  display: grid;
-}
-
-.players button {
-  justify-content: center;
-  padding: 20px;
-  margin-bottom: 30px;
-  border-radius: 15px;
-  background-color: lightyellow;
-  border: none;
-}
 
 .modal-wrapper {
   position: fixed;
