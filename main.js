@@ -37,28 +37,24 @@ function gridCells(){
   if (counter >= 9) {
   resultPopup.classList.add('visible')
   resultDisplay.innerHTML = "Looks like it's a draw!"
-  gameResult.innerHTML = "It's a draw!"
   }
 } 
 
 // Function for alternating turns and completing the cells with X or O
-maxMoves = 9;
 function moves(cellElement) {
   if (cellElement.textContent !== "") {
     console.log(cellElement.textContent)
     return
   }
-  if (maxMoves %2 === 0) {
-    maxMoves = true
+  if (counter %2 === 0) {
     backgroundChangeOne()
     currentPlayer.textContent = "It's your turn Player one"
-  } else if (maxMoves %2 !== 0) {
-    maxMoves = false
+  } else if (counter %2 !== 0) {
     backgroundChangeTwo()
     currentPlayer.textContent = "It's your turn Player two";
   } 
-  if (maxMoves >= 9) {
-    currentPlayer.textContent = "draw!";
+  if (counter >= 9) {
+    currentPlayer.textContent = "It's a draw!";
   }
 }
 
