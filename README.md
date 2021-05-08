@@ -35,6 +35,11 @@ Game URL: https://shell111.github.io/tic-tac-toe/
 ## Future updates
 + Code to be refactored to be scalable 
 + Options for users to choose their X or O, or input their own avatars or markers
-+ Empty cells to not be clickable once game win is determined
 + Game reset to automatically happen after a specified time period instead of be manually reset by button
 + Multiple player options to be developed
+
+## Bugs
++ Empty cells to not be clickable once game win is determined
+
+## Screenshots
+![Screenshot of game home screen](Home-screen.png)
