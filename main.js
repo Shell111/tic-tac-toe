@@ -58,7 +58,7 @@ function moves(cellElement) {
   }
 }
 
-// Event listeners for gridCells function
+// Event listeners for gridCells function (counter function)
 const gridTurns = document.querySelectorAll('.box');
 gridTurns[0].addEventListener('click', gridCells)
 gridTurns[1].addEventListener('click', gridCells)
